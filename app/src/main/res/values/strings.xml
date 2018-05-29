@@ -51,5 +51,6 @@
     <string name="pregunta_eliminacion">¿Está seguro que desea eliminar a este Computador?</string>
     <string name="informacion">Descripcion</string>
     <string name="eliminar">Eliminar</string>
+    <string name="error_ram">Complete el campo vacio</string>
 
 </resources>

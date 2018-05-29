@@ -58,21 +58,24 @@ public class CrearComputadores extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        String marca, color, tipo,so, id;
-        int ram, foto;
-        foto = Datos.fotoAleatoria(fotos);
-        marca = obtenerDato(Marca);
-        ram  = Integer.parseInt(Ram.getText().toString());
-        color = obtenerDato(Color);
-        tipo = obtenerDato(Tipo);
-        so = obtenerDato(SO);
-        id = Datos.getId();
+        if (Validar()){
+            String marca, color, tipo,so, id;
+            int ram, foto;
+            foto = Datos.fotoAleatoria(fotos);
+            marca = obtenerDato(Marca);
+            ram  = Integer.parseInt(Ram.getText().toString());
+            color = obtenerDato(Color);
+            tipo = obtenerDato(Tipo);
+            so = obtenerDato(SO);
+            id = Datos.getId();
 
-        Computador C = new Computador(id, marca, color, tipo, so, ram, foto);
-        C.guardar();
-        Snackbar.make(v, getResources().getString(R.string.mensaje_guardado_exitoso), Snackbar.LENGTH_SHORT)
-                .setAction("Action", null).show();
-        limpiar();
+            Computador C = new Computador(id, marca, color, tipo, so, ram, foto);
+            C.guardar();
+            Snackbar.make(v, getResources().getString(R.string.mensaje_guardado_exitoso), Snackbar.LENGTH_SHORT)
+                    .setAction("Action", null).show();
+            limpiar();
+        }
+
     }
 
     public void limpiar(View v){
@@ -85,6 +88,14 @@ public class CrearComputadores extends AppCompatActivity {
         Color.setSelection(0);
         Tipo.setSelection(0);
         SO.setSelection(0);
+    }
+    public boolean Validar(){
+        if(Ram.getText().toString().trim().isEmpty()){
+            Ram.requestFocus();
+            Ram.setError(getResources().getString(R.string.error_ram));
+            return false;
+        }
+        return true;
     }
 
     public void onBackPressed(){

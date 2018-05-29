@@ -43,6 +43,8 @@ public class DetalleComputador extends AppCompatActivity {
         tMarcadetalle.setText(marca);
         tRamdetalle.setText(String.valueOf(ram));
         tColordetalle.setText(color);
+        tTipodetalle.setText(tipo);
+        tSistemaopdetalle.setText(sistemaOp);
         Fimg.setImageResource(foto_pc);
 
 
