@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "295111274484",
+    "firebase_url": "https://computadores-31120.firebaseio.com",
+    "project_id": "computadores-31120",
+    "storage_bucket": "computadores-31120.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295111274484:android:bd4007c48d7af7a0",
+        "android_client_info": {
+          "package_name": "sore.computadores"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295111274484-c49b5sfv3ccaadr21mbmtq0155uvb2vo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sore.computadores",
+            "certificate_hash": "cee8a9f623c8219adb6e5c24dc687d31e49ec105"
+          }
+        },
+        {
+          "client_id": "295111274484-hke4qa3eqnmk5ildhoeq4csee0jc8ihj.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "295111274484-hke4qa3eqnmk5ildhoeq4csee0jc8ihj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvGjxIf-DZ9QxMH4NaUAXHfaUZ6-lLUwk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295111274484-hke4qa3eqnmk5ildhoeq4csee0jc8ihj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
