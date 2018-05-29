@@ -34,7 +34,7 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
         final Computador C = computadores.get(position);
         holder.foto.setImageResource(C.getFoto());
         holder.marca.setText(C.getMarca());
-        holder.ram.setText(C.getRam());
+        holder.ram.setText(String.valueOf(C.getRam()));
         holder.color.setText(C.getColor());
         holder.so.setText(C.getSO());
 
@@ -62,11 +62,11 @@ public class AdaptadorComputador extends RecyclerView.Adapter<AdaptadorComputado
         public ComputadorViewHolder(View itemView){
             super(itemView);
             v = itemView;
-            //foto = v.findViewById(R.id.imgFoto);
-            //marca = v.findViewById(R.id.lblMarca);
-            //ram = v.findViewById(R.id.lblRam);
-            //color = v.findViewById(R.id.lblColor);
-            //so = v.findViewById(R.id.lblSO);
+            foto = v.findViewById(R.id.imgFoto);
+            marca = v.findViewById(R.id.l_marca);
+            ram = v.findViewById(R.id.l_ram);
+            color = v.findViewById(R.id.l_color);
+            so = v.findViewById(R.id.l_sisop);
         }
     }
 

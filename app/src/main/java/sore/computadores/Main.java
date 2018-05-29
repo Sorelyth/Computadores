@@ -44,7 +44,7 @@ public class Main extends AppCompatActivity implements AdaptadorComputador.OnCom
         adapter = new AdaptadorComputador(computadores,this);
 
         lstOpciones.setLayoutManager(llm);
-        //lstOpciones.setAdapter(adapter);
+        lstOpciones.setAdapter(adapter);
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
         databaseReference.child(db).addValueEventListener(new ValueEventListener() {
@@ -63,6 +63,7 @@ public class Main extends AppCompatActivity implements AdaptadorComputador.OnCom
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
+
             }
         });
     }
@@ -81,7 +82,7 @@ public class Main extends AppCompatActivity implements AdaptadorComputador.OnCom
         b.putInt("ram",C.getRam());
         b.putString("color",C.getColor());
         b.putString("tipo",C.getTipo());
-        b.putString("sistema_operativo",C.getSO());
+        b.putString("sistemaop",C.getSO());
         b.putInt("foto",C.getFoto());
 
         i.putExtra("datos",b);

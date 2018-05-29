@@ -43,17 +43,17 @@ public class CrearComputadores extends AppCompatActivity {
         SO.setAdapter(adpS);
 
 
-        //fotos = new ArrayList<Integer>();
-        //fotos.add(R.drawable.images);
-        //fotos.add(R.drawable.images2);
-        //fotos.add(R.drawable.images3);
-        //fotos.add(R.drawable.images4);
+        fotos = new ArrayList<Integer>();
+        fotos.add(R.drawable.acer);
+        fotos.add(R.drawable.dell);
+        fotos.add(R.drawable.hp);
+        fotos.add(R.drawable.samsung);
 
     }
 
-    public String obtenerDato(Spinner spn){
+    public String obtenerDato(Spinner spinner){
         String cadena = "";
-        cadena = spn.getSelectedItem().toString();
+        cadena = spinner.getSelectedItem().toString();
         return cadena;
     }
 

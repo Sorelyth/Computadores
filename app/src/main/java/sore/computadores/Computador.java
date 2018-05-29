@@ -12,6 +12,10 @@ public class Computador {
 
     }
 
+    public Computador(String id) {
+        this.id = id;
+    }
+
     public Computador(String id, String marca, String color, String tipo, String SO, int ram, int foto) {
         this.id = id;
         this.marca = marca;
